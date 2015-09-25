@@ -20,18 +20,18 @@ For example, the 32-bit integer ’11' has binary representation 000000000000000
 
 ```
 int hammingWeight(uint32_t n) {
-        int count = 0;
-        uint32_t i = 1;
-        uint32_t temp = 0;
-        int result = 0;
+    int count = 0;
+    uint32_t i = 1;
+    uint32_t temp = 0;
+    int result = 0;
  
-        while(count++<=32){
-            temp = n & i;
-            if(temp!=0)
-                result++;
-            i<<=1;
-        }
-        return result;
+    while(count++<=32){
+        temp = n & i;
+        if(temp!=0)
+            result++;
+        i<<=1;
+    }
+    return result;
 }
 ```
 
